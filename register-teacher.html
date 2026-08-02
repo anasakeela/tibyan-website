@@ -478,60 +478,62 @@ footer.site-footer{background:var(--bg-deep); color:#A9B6AE; padding:52px 0 0; f
 <section>
   <div class="wrap" style="max-width:780px;">
     <div class="form-card reveal">
-      <form data-preview-form data-success-target="#teacher-success">
-
+      <form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="f84b0936-8d97-47f4-b1bb-786b8942872a">
+<input type="hidden" name="subject" value="تسجيل جديد - معلم | موقع تبيان">
+<input type="hidden" name="from_name" value="موقع تبيان">
         <div class="form-section-title"><span class="num">1</span> البيانات الشخصية</div>
         <div class="field-grid">
-          <div class="field"><label>الاسم الكامل</label><input type="text" required placeholder="مثال: أحمد سالم"></div>
-          <div class="field">
-            <label>الجنس</label>
-            <div class="radio-row">
-              <label class="radio-opt"><input type="radio" name="tgender" required> ذكر</label>
-              <label class="radio-opt"><input type="radio" name="tgender"> أنثى</label>
-            </div>
-          </div>
-          <div class="field"><label>العمر</label><input type="number" min="18" max="80" required placeholder="مثال: 28"></div>
-          <div class="field"><label>رقم التواصل (واتساب)</label><input type="tel" required placeholder="05xxxxxxxx"></div>
-          <div class="field full"><label>البريد الإلكتروني</label><input type="email" required placeholder="example@email.com"></div>
+          <div class="field"><label>الاسم الكامل</label><input type="text" name="name" required placeholder="مثال: أحمد سالم"></div>
+       <div class="field">
+  <label>الجنس</label>
+  <div class="radio-row">
+    <label class="radio-opt"><input type="radio" name="gender" value="ذكر" required> ذكر</label>
+    <label class="radio-opt"><input type="radio" name="gender" value="أنثى"> أنثى</label>
+  </div>
+</div>
+          <div class="field"><label>العمر</label><input type="number" name="age" min="18" max="80" required placeholder="مثال: 28"></div>
+          <div class="field"><label>رقم التواصل (واتساب)</label><input type="tel" name="phone" required placeholder="05xxxxxxxx"></div>
+          <div class="field full"><label>البريد الإلكتروني</label><input type="email" name="email" required placeholder="example@email.com"></div>
         </div>
 
         <div class="form-section-title"><span class="num">2</span> المؤهلات العلمية والشرعية</div>
         <div class="field-grid">
-          <div class="field full"><label>المؤهل العلمي</label><input type="text" required placeholder="مثال: بكالوريوس شريعة إسلامية"></div>
+          <div class="field full"><label>المؤهل العلمي</label><input type="text" name="qualification" required placeholder="مثال: بكالوريوس شريعة إسلامية"></div>
           <div class="field">
             <label>هل تحمل إجازة أو سند في القرآن؟</label>
             <div class="radio-row">
-              <label class="radio-opt"><input type="radio" name="ijaza" required> نعم</label>
-              <label class="radio-opt"><input type="radio" name="ijaza"> لا</label>
+             <label class="radio-opt"><input type="radio" name="ijaza" value="نعم" required> نعم</label>
+<label class="radio-opt"><input type="radio" name="ijaza" value="لا"> لا</label>
             </div>
           </div>
-          <div class="field"><label>تفاصيل الإجازة <span class="hint">(إن وجدت)</span></label><input type="text" placeholder="مثال: إجازة برواية حفص عن عاصم"></div>
+          <div class="field"><label>تفاصيل الإجازة <span class="hint">(إن وجدت)</span></label><input type="text" name="ijaza_details" placeholder="مثال: إجازة برواية حفص عن عاصم"></div>
         </div>
 
         <div class="form-section-title"><span class="num">3</span> التخصص والخبرة</div>
         <div class="field-grid">
           <div class="field">
-            <label>التخصص المرغوب بالتطوّع فيه</label>
-            <select required>
-              <option value="">اختر التخصص</option>
-              <option>تعليم القرآن الكريم</option>
-              <option>تحفيظ القرآن الكريم</option>
-              <option>القراءات القرآنية</option>
-              <option>علم التجويد</option>
-              <option>نادي المسلم الصغير</option>
-            </select>
+         <label>التخصص المرغوب بالتطوّع فيه</label>
+<select name="specialization" required>
+  <option value="">اختر التخصص</option>
+  <option>تعليم القرآن الكريم</option>
+  <option>تحفيظ القرآن الكريم</option>
+  <option>القراءات القرآنية</option>
+  <option>علم التجويد</option>
+  <option>نادي المسلم الصغير</option>
+</select>
           </div>
-          <div class="field"><label>سنوات الخبرة في التعليم</label><input type="number" min="0" max="60" required placeholder="مثال: 5"></div>
+          <div class="field"><label>سنوات الخبرة في التعليم</label><input type="number" name="experience_years" min="0" max="60" required placeholder="مثال: 5"></div>
           <div class="field full">
             <label>الأوقات المتاحة للتطوّع أسبوعيًا</label>
-            <div class="check-row">
-              <label class="check-opt"><input type="checkbox"> صباحًا</label>
-              <label class="check-opt"><input type="checkbox"> بعد الظهر</label>
-              <label class="check-opt"><input type="checkbox"> مساءً</label>
-              <label class="check-opt"><input type="checkbox"> نهاية الأسبوع</label>
-            </div>
+           <div class="check-row">
+  <label class="check-opt"><input type="checkbox" name="availability" value="صباحًا"> صباحًا</label>
+  <label class="check-opt"><input type="checkbox" name="availability" value="بعد الظهر"> بعد الظهر</label>
+  <label class="check-opt"><input type="checkbox" name="availability" value="مساءً"> مساءً</label>
+  <label class="check-opt"><input type="checkbox" name="availability" value="نهاية الأسبوع"> نهاية الأسبوع</label>
+</div>
           </div>
-          <div class="field full"><label>نبذة عن خبرتك ودافعك للتطوّع</label><textarea required placeholder="حدّثنا قليلًا عن مسيرتك التعليمية، ولماذا ترغب بالتطوّع في تبيان"></textarea></div>
+          <div class="field full"><label>نبذة عن خبرتك ودافعك للتطوّع</label><textarea name="experience_motivation" required placeholder="حدّثنا قليلًا عن مسيرتك التعليمية، ولماذا ترغب بالتطوّع في تبيان"></textarea></div>
           <div class="field full">
             <label>السيرة الذاتية <span class="hint">(اختياري)</span></label>
             <div class="file-drop">
