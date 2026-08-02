@@ -533,15 +533,17 @@ footer.site-footer{background:var(--bg-deep); color:#A9B6AE; padding:52px 0 0; f
   <label class="check-opt"><input type="checkbox" name="availability" value="نهاية الأسبوع"> نهاية الأسبوع</label>
 </div>
           </div>
-          <div class="field full"><label>نبذة عن خبرتك ودافعك للتطوّع</label><textarea name="experience_motivation" required placeholder="حدّثنا قليلًا عن مسيرتك التعليمية، ولماذا ترغب بالتطوّع في تبيان"></textarea></div>
-          <div class="field full">
-            <label>السيرة الذاتية <span class="hint">(اختياري)</span></label>
-            <div class="file-drop">
-              <svg class="fico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="100%" height="100%"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M4 15v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg>
-              اسحب الملف هنا أو اضغط للاختيار — PDF أو Word
-              <input type="file" style="display:none;">
-            </div>
-          </div>
+       <div class="field full">
+  <label>رابط السيرة الذاتية <span class="hint">(اختياري)</span></label>
+  <input
+    type="url"
+    name="cv_link"
+    placeholder="ضع هنا رابط السيرة الذاتية من Google Drive"
+  >
+  <small style="display:block; margin-top:8px; color:#777;">
+    ارفع سيرتك الذاتية على Google Drive، ثم اجعل الوصول إليها متاحًا لمن يملك الرابط، وانسخ الرابط هنا.
+  </small>
+</div>
         </div>
 
         <button type="submit" class="btn btn-primary btn-block btn-lg">إرسال طلب التطوّع</button>
