@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مؤسسة تبيان — معرض الشاشات</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --bg:#F7F7F5; --surface:#FFFFFF; --border:#E5E5DE;
+    --text:#16201A; --text-2:#5B665E; --text-3:#8A958C;
+    --primary:#1B6B3A; --primary-soft:#E8F0EA; --gold:#C9A227; --gold-deep:#A6831A;
+    --brand:#15512B; --brand-2:#0F3D20;
+    --shadow:0 1px 2px rgba(20,40,28,.05), 0 14px 34px -18px rgba(20,40,28,.22);
+    --font:"Segoe UI","Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+  }
+  body { font-family:var(--font); background:var(--bg); color:var(--text); min-height:100vh; -webkit-font-smoothing:antialiased; }
+  .hero { position:relative; overflow:hidden; background:radial-gradient(130% 120% at 100% 0%, var(--brand) 0%, var(--brand-2) 100%); color:#F3EFE6; padding:64px 40px 56px; text-align:center; }
+  .hero .verse { position:absolute; top:-60px; left:-20px; font-size:300px; line-height:1; color:#fff; opacity:.05; pointer-events:none; }
+  .badge { display:inline-flex; align-items:center; gap:8px; padding:7px 16px; border-radius:999px; background:rgba(201,162,39,.18); border:1px solid rgba(201,162,39,.4); font-size:13px; font-weight:600; color:#E0BB47; margin-bottom:20px; }
+  .badge .dot { width:7px; height:7px; border-radius:50%; background:var(--gold); }
+  .hero h1 { position:relative; font-size:46px; font-weight:800; letter-spacing:-.5px; margin-bottom:14px; }
+  .hero p { position:relative; font-size:16px; line-height:1.9; opacity:.82; max-width:56ch; margin:0 auto; }
+  .hint { position:relative; display:inline-flex; align-items:center; gap:8px; margin-top:22px; font-size:13px; opacity:.75; background:rgba(255,255,255,.08); padding:8px 16px; border-radius:999px; }
+  .wrap { max-width:1180px; margin:0 auto; padding:54px 40px 90px; }
+  .sec { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+  .sec-head .line { flex:1; height:1px; background:var(--border); }
+  .sec-head h2 { font-size:15px; font-weight:700; letter-spacing:.5px; color:var(--gold-deep); white-space:nowrap; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:18px; }
+  .card { display:flex; align-items:center; gap:16px; background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:20px 22px; box-shadow:var(--shadow); text-decoration:none; color:inherit; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+  .card:hover { transform:translateY(-3px); border-color:color-mix(in srgb,var(--primary) 35%,transparent); box-shadow:0 1px 2px rgba(20,40,28,.05), 0 22px 44px -20px rgba(20,40,28,.30); }
+  .ic { flex-shrink:0; width:52px; height:52px; border-radius:14px; background:var(--primary-soft); color:var(--primary); display:flex; align-items:center; justify-content:center; }
+  .ic.gold { background:#F6EFD7; color:var(--gold-deep); }
+  .card .t { font-size:17px; font-weight:700; margin-bottom:3px; }
+  .card .d { font-size:13px; color:var(--text-2); line-height:1.6; }
+  .card .go { margin-inline-start:auto; color:var(--text-3); flex-shrink:0; }
+  footer { text-align:center; padding:30px; font-size:13px; color:var(--text-3); border-top:1px solid var(--border); }
+  .wordmark { font-size:40px; font-weight:800; color:#fff; position:relative; margin-bottom:6px; }
+  .wordmark span { color:var(--gold); }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="verse">۝</div>
+    <div class="badge"><span class="dot"></span>معرض الشاشات · نسخة تفاعلية تعمل دون إنترنت</div>
+    <div class="wordmark">تبيان<span>.</span></div>
+    <h1>مؤسسة تبيان للقرآن وعلومه</h1>
+    <p>منصّة إدارة تعليم القرآن عن بُعد. اضغط أيّ شاشة لفتحها — التنسيقات والألوان والوضع المظلم وكل التفاعلات محفوظة بالكامل.</p>
+    <div class="hint">💡 كل شاشة تعرض الويب والموبايل معاً · جرّب زرّ الوضع المظلم والفلاتر داخلها</div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="sec">
+      <div class="sec-head"><h2>عام · قبل تسجيل الدخول</h2><span class="line"></span></div>
+      <div class="grid">
+        <a class="card" href="تبيان - الصفحة التسويقية.html">
+          <div class="ic gold"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-6 9 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21V12h6v9"/></svg></div>
+          <div><div class="t">الصفحة التسويقية</div><div class="d">تعريف بالمؤسسة · الدورات المجّانية · الحلقات الدائمة</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+        <a class="card" href="تبيان - صفحات الدخول.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+          <div><div class="t">صفحات الدخول</div><div class="d">تسجيل الدخول · نسيت كلمة المرور · تعيين كلمة جديدة</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><h2>واجهة الطالب</h2><span class="line"></span></div>
+      <div class="grid">
+        <a class="card" href="تبيان - رئيسية الطالب.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1v-9"/></svg></div>
+          <div><div class="t">رئيسية الطالب</div><div class="d">الحصة القادمة · التقدّم في الحفظ · آخر تقييم</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+        <a class="card" href="تبيان - غرفة الحصة.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 9.5l5-3v11l-5-3"/></svg></div>
+          <div><div class="t">غرفة الحصة</div><div class="d">بثّ مباشر · دور التسميع · دردشة ورفع يد (طالب ومعلّم)</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><h2>واجهة المعلّم</h2><span class="line"></span></div>
+      <div class="grid">
+        <a class="card" href="تبيان - رئيسية المعلّم.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 3v18"/></svg></div>
+          <div><div class="t">رئيسية المعلّم</div><div class="d">حلقات اليوم · عدد الطلاب · تنبيهات سريعة</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+        <a class="card" href="تبيان - تقييم بعد الحصة.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <div><div class="t">الحضور والتقييم</div><div class="d">كشف الطلاب · حضور/غياب · تقييم نصّي لكل طالب</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><h2>واجهة المشرف</h2><span class="line"></span></div>
+      <div class="grid">
+        <a class="card" href="تبيان - لوحة المشرف.html">
+          <div class="ic gold"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></div>
+          <div><div class="t">لوحة المشرف</div><div class="d">إحصاءات المؤسسة · الحلقات والمعلّمون · تنبيهات</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+        <a class="card" href="تبيان - إدارة المستخدمين.html">
+          <div class="ic gold"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 20c0-3-1.2-4.6-3-5.3"/></svg></div>
+          <div><div class="t">إدارة المستخدمين</div><div class="d">جدول الحسابات · تبويبات المعلّمين والطلاب · إضافة/تعطيل</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><h2>المرجع</h2><span class="line"></span></div>
+      <div class="grid">
+        <a class="card" href="نظام تبيان البصري.html">
+          <div class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="12" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="13" r="2.5"/><path d="M12 22a9 9 0 0 1 0-18"/></svg></div>
+          <div><div class="t">النظام البصري</div><div class="d">الألوان · الخطوط · المكوّنات · القواعد</div></div>
+          <span class="go"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>© ٢٠٢٦ مؤسسة تبيان للقرآن وعلومه — معرض الشاشات</footer>
+</body>
+</html>
